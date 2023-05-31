@@ -1,6 +1,6 @@
 import inquirer from "inquirer";
 import qr from "qr-image";
-import fe from "fs";
+import fs from "fs";
 
 inquirer
   .prompt([{ message: "Type in your URL: ", name: "URL" }])

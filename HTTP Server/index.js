@@ -1,14 +1,7 @@
+const Logger = require("./logger");
 
-const Student = require("./person");
+const logger = new Logger();
 
-const person1 = new Student("Mariga", 23," Computer Science");
-const person2 = new Student("Brenin", 25," Food Science");
-const person3 = new Student("Perez", 7," C.R.E");
+logger.on("message", (data) => console.log("Called Listener: ", data));
 
-person1.greeting();
-person2.greeting();  
-person3.greeting();
-
-
-
-
+logger.log("Hello World!");
